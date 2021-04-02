@@ -1,0 +1,9 @@
+.sidebar{
+    background-image: linear-gradient(#232526, #414345);
+    color: white;
+    min-height: 845px;
+}
+.sidebar-link {
+    color: white;
+    text-decoration: none;
+}

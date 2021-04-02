@@ -1,0 +1,26 @@
+.pd-card h4{
+    color: tomato;
+}
+.pd-card {
+    min-height: 450px;
+    align-items: center;
+}
+.buy-btn{
+    border: none;
+    background: tomato;
+    padding: 5px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+}
+.pd-card {
+    transition: all 0.2s ease-in;
+}
+.pd-card:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+.home-bg {
+    background-color: #b2dfdb;
+}

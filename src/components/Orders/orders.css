@@ -1,0 +1,23 @@
+.order-bg {
+    background-color: lightgray;
+}
+.order-header {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+h5 {
+    background-color: #1a237e;
+    padding: 8px;
+    color: #fff;
+    margin: 0;
+}
+.pdImg {
+    width: 100px;
+}
+.table-bg{
+    background-color: white;
+}
+.pd-price {
+    border-top: 1px solid lightgray;
+}
