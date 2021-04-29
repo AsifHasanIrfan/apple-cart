@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import Sidebar from '../Sidebar/Sidebar';
-import { useForm } from "react-hook-form";
 import axios from 'axios';
+import React, { useState } from 'react';
+import { useForm } from "react-hook-form";
+import Sidebar from '../Sidebar/Sidebar';
 import './addProduct.css';
 
 const AddProduct = () => {
@@ -15,7 +15,7 @@ const AddProduct = () => {
             price: data.price,
             imageURL: imageURL
         }
-        fetch('http://localhost:5000/addProducts', {
+        fetch('https://salty-reef-74823.herokuapp.com/addProducts', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

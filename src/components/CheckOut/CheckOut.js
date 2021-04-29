@@ -12,7 +12,7 @@ const CheckOut = () => {
     const {name, price} = product;
     
     useEffect(() => {
-        fetch(`http://localhost:5000/product/${id}`)
+        fetch(`https://salty-reef-74823.herokuapp.com/product/${id}`)
         .then(res => res.json())
         .then(data => setProduct(data[0]))
     }, [])
@@ -20,7 +20,7 @@ const CheckOut = () => {
     const handleCheckout = () => {
         const checkOutDetails = {...loggedInUser, product: product, orderTime: format(new Date(),'MM.dd.yyyy')}
 
-        fetch('http://localhost:5000/addOrders', {
+        fetch('https://salty-reef-74823.herokuapp.com/addOrders', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(checkOutDetails)

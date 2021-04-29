@@ -1,19 +1,19 @@
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import Sidebar from '../Sidebar/Sidebar';
 import './manageProduct.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
 const ManageProduct = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://salty-reef-74823.herokuapp.com/products')
         .then(response => response.json())
         .then(data => setProducts(data))
     }, [])
 
     const deleteProduct = (id) => {
-        fetch(`http://localhost:5000/deleteProduct/${id}`, {
+        fetch(`https://salty-reef-74823.herokuapp.com/deleteProduct/${id}`, {
             method: 'DELETE',
         })
         .then(response => response.json())

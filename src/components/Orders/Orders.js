@@ -10,7 +10,7 @@ const Orders = () => {
     console.log(total)
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders?email='+ loggedInUser.email)
+        fetch('https://salty-reef-74823.herokuapp.com/orders?email='+ loggedInUser.email)
         .then(res => res.json())
         .then(data => setOrders(data))
     }, [])
